@@ -19,6 +19,10 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public virtual void Move()
+    {
+
+    }
     //트리거에 들어갔을 때
     void OnTriggerEnter2D(Collider2D collision)
     {

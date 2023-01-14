@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Enemy2 : Enemy
 {
-    private void Start()
-    {
-        Move();
-    }
-    private void Move()
+    public override void Move()
     {
         rigid.AddForce(Vector2.left * 50);
     }
